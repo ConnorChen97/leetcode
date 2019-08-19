@@ -34,12 +34,12 @@ const merge = (nums1, nums2) => {
     let j = nums2.length - 1; 
     let index = nums1.length + nums2.length - 1;
     
-    while(i>=0 && j>=0)
+    while (i >= 0 && j >= 0)
     {
         nums1[index--] = nums1[i] > nums2[j] ? nums1[i--] : nums2[j--];
     }
     
-    while(j >= 0)
+    while (j >= 0)
     {
         nums1[index--] = nums2[j--];
     }
