@@ -11,7 +11,7 @@ import java.util.LinkedList;
 class Solution {
     public String simplifyPath(String path) {
         String[] paths = path.split("/");
-        Deque<String> stack = new LinkedList();
+        Deque<String> stack = new LinkedList<>();
         for (String p : paths) {
             if ("..".equals(p) ) {
                 if (!stack.isEmpty()) {

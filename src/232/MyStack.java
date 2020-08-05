@@ -1,9 +1,4 @@
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.util.Deque;
-import java.util.LinkedList;
 import java.util.Stack;
-import java.util.concurrent.DelayQueue;
 
 /*
  * @lc app=leetcode.cn id=232 lang=java
@@ -19,8 +14,8 @@ class MyQueue {
 
     /** Initialize your data structure here. */
     public MyQueue() {
-        stack1 = new Stack();
-        stack2 = new Stack();
+        stack1 = new Stack<>();
+        stack2 = new Stack<>();
     }
     
     /** Push element x to the back of queue. */
