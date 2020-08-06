@@ -12,3 +12,9 @@ const quick_sort = (arr) => {
 
 const arr = [12,3,4,563,45,6,78];
 console.log(quick_sort(arr));
+
+
+const qsort = ([head, ...tails]) => !head ? [] : qsort(tails.filter(_ => _ < head))
+    .concat(head)
+    .concat(qsort(tails.filter(_ => _ >= head)));
+console.log(qsort(arr));
